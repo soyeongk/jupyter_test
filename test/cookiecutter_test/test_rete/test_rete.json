@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "test_rete/extension": true
+  }
+}

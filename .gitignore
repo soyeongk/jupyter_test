@@ -1,3 +1,6 @@
 jupylab/
 *.docx
 *.tmp
+vuedjango/*
+test/ipyvue
+test/vue_test

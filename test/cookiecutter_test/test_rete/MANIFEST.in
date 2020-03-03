@@ -1,0 +1,2 @@
+recursive-include test_rete/static *.*
+include test_rete.json
