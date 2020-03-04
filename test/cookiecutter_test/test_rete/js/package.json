@@ -1,43 +1,50 @@
 {
-  "name": "test_rete",
-  "version": "0.0.0",
-  "description": "test",
-  "author": "ksy",
-  "main": "lib/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ksy/test_rete.git"
-  },
-  "keywords": [
-    "jupyter",
-    "widgets",
-    "ipython",
-    "ipywidgets",
-    "jupyterlab-extension"
-  ],
-  "files": [
-    "lib/**/*.js",
-    "dist/*.js"
-  ],
-  "scripts": {
-    "clean": "rimraf dist/",
-    "prepublish": "webpack",
-    "build": "webpack",
-    "watch": "webpack --watch --mode=development",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "devDependencies": {
-    "webpack": "^3.5.5",
-    "rimraf": "^2.6.1"
-  },
-  "dependencies": {
-    "@jupyter-widgets/base": "^1.1 || ^2",
-    "lodash": "^4.17.4",
-    "rete": "^1.4.3-rc.1",
-    "rete-connection-plugin": "^0.9.0",
-    "rete-vue-render-plugin": "^0.5.0"
-  },
-  "jupyterlab": {
-    "extension": "lib/labplugin"
-  }
+    "name": "test_rete",
+    "version": "0.0.0",
+    "description": "test",
+    "author": "ksy",
+    "main": "lib/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ksy/test_rete.git"
+    },
+    "keywords": [
+        "jupyter",
+        "widgets",
+        "ipython",
+        "ipywidgets",
+        "jupyterlab-extension"
+    ],
+    "files": [
+        "lib/**/*.js",
+        "dist/*.js"
+    ],
+    "scripts": {
+        "clean": "rimraf dist/",
+        "prepublish": "webpack",
+        "build": "webpack",
+        "watch": "webpack --watch --mode=development",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "@babel/plugin-transform-regenerator": "^7.8.3",
+        "babel-preset-env": "^1.7.0",
+        "css-loader": "^3.4.2",
+        "rimraf": "^2.6.1",
+        "style-loader": "^1.1.3",
+        "webpack": "^3.5.5"
+    },
+    "dependencies": {
+        "@jupyter-widgets/base": "^1.1 || ^2",
+        "babel-polyfill": "^6.26.0",
+        "lodash": "^4.17.4",
+        "rete": "^1.4.3-rc.1",
+        "rete-area-plugin": "^0.2.1",
+        "rete-connection-plugin": "^0.9.0",
+        "rete-context-menu-plugin": "^0.5.2",
+        "rete-vue-render-plugin": "^0.5.0"
+    },
+    "jupyterlab": {
+        "extension": "lib/labplugin"
+    }
 }
